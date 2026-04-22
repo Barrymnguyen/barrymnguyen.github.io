@@ -1,27 +1,283 @@
-PHOTO
-Barry Nguyen
-Postbaccalaureate Researcher, Lakkaraju Lab, UCSF
-Incoming Ph.D. Student, Columbia University (Fall 2026)
-[ADD YOUR EMAIL — e.g. your.name [at] ucsf [dot] edu]
-Calendly Google Scholar ORCID LinkedIn CV (PDF)
-ABOUT
-Hey there! I am an incoming PhD student at Columbia University in the Disease and Therapeutics track, part of the broader Biomedical Life Sciences umbrella program. I received my B.S. in Biochemistry and Molecular Biology at UC Davis as a Regents and MARC scholar. After, I joined UCSF as a post-baccalaureate researcher.
-I am interested in the pathobiology that underlies age-related diseases such as Alzheimer's disease and age-related macular degeneration. In particular, I seek to (1) identify the genetic networks that confer increased cellular resilience or susceptibility to such diseases, and using those insights (2) develop therapeutic strategies to preserve tissue function in hopes of extending healthspan and improving quality of life.
-Throughout my academic and research journey, I have been blessed with amazing mentors. I recognize that many students don't have access to similar resources. I am open to mentoring individuals at all levels on topics including (but not limited to) securing post-bacc or undergraduate research positions, graduate school applications, and research fellowships. Please use my Calendly to schedule a meeting!
-I am also open to discussing all things science and potential collaborations. Please feel free to schedule a meeting.
-NEWS
-Mar 2026
-Committed to Columbia University's BLS PhD program!
-Apr 2025
-Gave a research talk at UCSF Ophthalmology Research Day.
-May 2024
-Presented at the UCSF PROPEL Research Symposium.
-Nov 2023
-Received a research supplement from the National Eye Institute.
-Sep 2023
-Began post-baccalaureate research at UCSF.
-EDUCATION
-		Columbia University — Vagelos College of Physicians and Surgeons Ph.D., Biomedical Life Sciences (Disease & Therapeutics track)  Fall 2026 – Present University of California, Davis B.S., Biochemistry & Molecular Biology · Regents Scholar · MARC Scholar  2023
-VISITORS
-(Visitor map loads here once ClustrMaps is set up.)
-Last updated April 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barry Nguyen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fg: #1a1a1a;
+    --fg-soft: #333;
+    --muted: #666;
+    --rule: #e0e0e0;
+    --link: #2360a5;
+    --link-hover: #c03020;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 48px 32px 64px;
+  }
+
+  a { color: var(--link); text-decoration: none; }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+
+  .header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .photo {
+    width: 180px; height: 180px;
+    border-radius: 6px;
+    background: #f0efe9;
+    background-image: linear-gradient(135deg, #e5e3da 0%, #d4d1c4 100%);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px; letter-spacing: 0.04em;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .identity h1 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 30px; font-weight: 600;
+    margin: 0 0 8px; letter-spacing: -0.01em;
+  }
+  .identity .role {
+    font-size: 16px; color: var(--fg-soft);
+    margin: 0 0 4px;
+  }
+  .identity .email {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px; color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .identity .social {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+  }
+  .identity .social a { margin-right: 14px; }
+
+  section { margin-top: 40px; }
+  section > h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px; font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--fg);
+    margin: 0 0 16px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section p { margin: 0 0 12px; }
+  section p:last-child { margin-bottom: 0; }
+
+  .news {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 10px 20px;
+    font-size: 15px;
+  }
+  .news .date {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    color: var(--fg);
+    font-size: 14px;
+    padding-top: 2px;
+  }
+  .news .item { color: var(--fg-soft); }
+
+  .cv-list { list-style: none; padding: 0; margin: 0; }
+  .cv-list li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dotted var(--rule);
+    align-items: baseline;
+  }
+  .cv-list li:last-child { border-bottom: none; }
+  .cv-list .inst { font-weight: 600; color: var(--fg); }
+  .cv-list .detail {
+    display: block;
+    font-size: 14px;
+    color: var(--fg-soft);
+    font-weight: 400;
+    margin-top: 2px;
+  }
+  .cv-list .when {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .visitors {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+  }
+  .visitors .label {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .visitors .map-box {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .container { padding: 32px 20px 48px; }
+    .header { grid-template-columns: 1fr; gap: 20px; text-align: center; }
+    .photo { width: 140px; height: 140px; margin: 0 auto; }
+    .identity h1 { font-size: 26px; }
+    .news { grid-template-columns: 1fr; gap: 2px 0; }
+    .news .date { padding-top: 8px; }
+    .news .item { padding-bottom: 4px; }
+    .cv-list li { grid-template-columns: 1fr; }
+    .cv-list .when { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="photo">
+      <!-- TO ADD A PHOTO: upload a file named profile.jpg to your repo,
+           then replace the word "photo" below with:
+           <img src="profile.jpg" alt="Barry Nguyen">
+      -->
+      photo
+    </div>
+    <div class="identity">
+      <h1>Barry Nguyen</h1>
+      <p class="role">Postbaccalaureate Researcher, <a href="https://lakkarajulab.ucsf.edu">Lakkaraju Lab</a>, UCSF</p>
+      <p class="role">Incoming Ph.D. Student, Columbia University (Fall 2026)</p>
+      <p class="email">[ADD YOUR EMAIL — e.g. your.name [at] ucsf [dot] edu]</p>
+      <p class="social">
+        <a href="https://calendly.com/azob0000/30min">Calendly</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">ORCID</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">CV (PDF)</a>
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <h2>About</h2>
+    <p>Hey there! I am an incoming PhD student at <strong><a href="https://www.vagelos.columbia.edu">Columbia University</a></strong> in the Disease and Therapeutics track, part of the broader Biomedical Life Sciences umbrella program. I received my B.S. in Biochemistry and Molecular Biology at <strong><a href="https://www.ucdavis.edu">UC Davis</a></strong> as a Regents and MARC scholar. After, I joined <strong><a href="https://www.ucsf.edu">UCSF</a></strong> as a post-baccalaureate researcher.</p>
+
+    <p>I am interested in the pathobiology that underlies age-related diseases such as Alzheimer's disease and age-related macular degeneration. In particular, I seek to (1) identify the genetic networks that confer increased cellular resilience or susceptibility to such diseases, and using those insights (2) develop therapeutic strategies to preserve tissue function in hopes of extending healthspan and improving quality of life.</p>
+
+    <p>Throughout my academic and research journey, I have been blessed with amazing mentors. I recognize that many students don't have access to similar resources. I am open to mentoring individuals at all levels on topics including (but not limited to) securing post-bacc or undergraduate research positions, graduate school applications, and research fellowships. Please use my <a href="https://calendly.com/azob0000/30min">Calendly</a> to schedule a meeting!</p>
+
+    <p>I am also open to discussing all things science and potential collaborations. Please feel free to <a href="https://calendly.com/azob0000/30min">schedule a meeting</a>.</p>
+  </section>
+
+  <section>
+    <h2>News</h2>
+    <div class="news">
+      <div class="date">Mar 2026</div>
+      <div class="item">Committed to <strong>Columbia University's BLS PhD program</strong>!</div>
+
+      <div class="date">Apr 2025</div>
+      <div class="item">Gave a research talk at <strong>UCSF Ophthalmology Research Day</strong>.</div>
+
+      <div class="date">May 2024</div>
+      <div class="item">Presented at the <strong>UCSF PROPEL Research Symposium</strong>.</div>
+
+      <div class="date">Nov 2023</div>
+      <div class="item">Received a research supplement from the <strong>National Eye Institute</strong>.</div>
+
+      <div class="date">Sep 2023</div>
+      <div class="item">Began post-baccalaureate research at <strong>UCSF</strong>.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul class="cv-list">
+      <li>
+        <div>
+          <span class="inst">Columbia University — Vagelos College of Physicians and Surgeons</span>
+          <span class="detail">Ph.D., Biomedical Life Sciences (Disease &amp; Therapeutics track)</span>
+        </div>
+        <span class="when">Fall 2026 – Present</span>
+      </li>
+      <li>
+        <div>
+          <span class="inst">University of California, Davis</span>
+          <span class="detail">B.S., Biochemistry &amp; Molecular Biology · Regents Scholar · MARC Scholar</span>
+        </div>
+        <span class="when">2023</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ========== Visitors Map (ClustrMaps) ==========
+       HOW TO ENABLE (do this AFTER the site is live):
+       1. Go to https://clustrmaps.com and sign up (free).
+       2. Register your site: https://barrymnguyen.github.io
+       3. Pick the "Map Widget" (classic globe with dots).
+       4. They'll give you a snippet starting with <script ...>.
+       5. Paste that snippet between the two arrows below, replacing the placeholder paragraph.
+  -->
+  <div class="visitors">
+    <div class="label">Visitors</div>
+    <div class="map-box">
+      <!-- ↓↓↓ PASTE CLUSTRMAPS SCRIPT HERE ↓↓↓ -->
+      <p style="color:#999;font-size:13px;font-family:'Source Sans 3',sans-serif;">
+        (Visitor map loads here once ClustrMaps is set up.)
+      </p>
+      <!-- ↑↑↑ PASTE CLUSTRMAPS SCRIPT ABOVE ↑↑↑ -->
+    </div>
+  </div>
+
+  <footer>
+    Last updated April 2026
+  </footer>
+
+</div>
+
+</body>
+</html>
