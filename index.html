@@ -185,7 +185,7 @@
       .then(function (r) { return r.json(); })
       .then(function (d) {
         if (d && typeof d.value === 'number') {
-          document.getElementById('visitCount').textContent = d.value.toLocaleString() + ' visitors';
+          document.getElementById('visitCount').textContent = d.value.toLocaleString() + ' total visits';
         }
       })
       .catch(function () { /* counter unavailable — footer just shows the date */ });
@@ -194,3 +194,4 @@
 
 </body>
 </html>
+
